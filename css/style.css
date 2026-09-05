@@ -537,3 +537,18 @@ ul.styled-list li::before {
 .map-link:hover {
   text-decoration: underline;
 }
+
+.pool-duo {
+  display: flex;
+  gap: 12px;
+  max-width: 500px;
+  margin: 2rem auto;
+}
+
+.pool-photo {
+  width: 50%;
+  aspect-ratio: 3 / 4;
+  object-fit: cover;
+  border-radius: 6px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+}
