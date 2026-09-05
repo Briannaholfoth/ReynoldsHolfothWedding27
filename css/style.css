@@ -550,9 +550,9 @@ ul.styled-list li::before {
 }
 
 .pool-photo {
-  width: 50%;
-  aspect-ratio: 3 / 4;
-  object-fit: cover;
+  width: 58%;
+  height: auto;
+  object-fit: contain;
   border-radius: 6px;
   box-shadow: 0 4px 10px rgba(0,0,0,0.12);
 }
