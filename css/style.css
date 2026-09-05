@@ -544,15 +544,26 @@ ul.styled-list li::before {
 
 .pool-duo {
   display: flex;
+  align-items: flex-start;
   gap: 12px;
-  max-width: 500px;
+  max-width: 520px;
   margin: 2rem auto;
 }
 
 .pool-photo {
+  border-radius: 6px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.12);
+  object-fit: cover;
+}
+
+.pool-photo--tall {
+  width: 42%;
+  aspect-ratio: 3 / 3.1;
+  object-position: bottom;
+}
+
+.pool-photo--wide {
   width: 58%;
   height: auto;
   object-fit: contain;
-  border-radius: 6px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.12);
 }
