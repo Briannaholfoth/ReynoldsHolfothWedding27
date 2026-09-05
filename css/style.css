@@ -34,6 +34,7 @@ body {
   font-weight: 300;
   line-height: 1.7;
   font-size: 17px;
+  overflow-x: hidden;
 }
 
 h1, h2, h3, h4 {
