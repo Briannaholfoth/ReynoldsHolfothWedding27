@@ -567,3 +567,112 @@ ul.styled-list li::before {
   height: auto;
   object-fit: contain;
 }
+
+/* ---------- Password Gate ---------- */
+#site-password-gate {
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  background: var(--olive-dark);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  transition: opacity 0.3s ease;
+}
+
+#site-password-gate.gate-hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.gate-box {
+  max-width: 380px;
+  width: 100%;
+  text-align: center;
+  color: var(--ivory);
+}
+
+.gate-box .eyebrow {
+  color: var(--lemon);
+}
+
+.gate-box h1 {
+  color: var(--ivory);
+  font-size: clamp(2rem, 5vw, 2.8rem);
+  margin: 10px 0 18px;
+}
+
+.gate-box p {
+  color: var(--ivory);
+  opacity: 0.85;
+  font-size: 0.95rem;
+  margin-bottom: 26px;
+}
+
+.gate-box form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.gate-box input[type="password"] {
+  font-family: var(--font-body);
+  font-size: 1rem;
+  padding: 14px 16px;
+  border: 1px solid rgba(250,246,238,0.3);
+  border-radius: var(--radius);
+  background: rgba(250,246,238,0.08);
+  color: var(--ivory);
+  text-align: center;
+  letter-spacing: 0.02em;
+}
+
+.gate-box input[type="password"]::placeholder {
+  color: rgba(250,246,238,0.5);
+}
+
+.gate-box input[type="password"]:focus {
+  outline: none;
+  border-color: var(--gold);
+  background: rgba(250,246,238,0.12);
+}
+
+.gate-box .gate-remember {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  font-size: 0.82rem;
+  opacity: 0.8;
+}
+
+.gate-box .gate-remember input {
+  accent-color: var(--gold);
+}
+
+.gate-box button {
+  font-family: var(--font-body);
+  font-size: 0.82rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-weight: 500;
+  padding: 14px 20px;
+  background: var(--olive);
+  color: var(--ivory);
+  border: 1px solid var(--olive);
+  border-radius: var(--radius);
+  cursor: pointer;
+}
+
+.gate-box button:hover {
+  background: var(--gold);
+  border-color: var(--gold);
+}
+
+.gate-box .gate-error {
+  display: none;
+  color: var(--lemon);
+  font-size: 0.85rem;
+  margin-top: 4px;
+}
