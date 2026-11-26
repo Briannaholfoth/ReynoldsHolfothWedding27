@@ -57,33 +57,150 @@
   </nav>
 </header>
 
-<section class="page-hero">
-  <div class="eyebrow">Last Step</div>
-  <h1>RSVP</h1>
-</section>
+<!-- ===== RSVP SECTION START (Bri & Brandon) ===== -->
+<style>
+  .rsvp-wrap {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 48px 20px 64px;
+    font-family: 'Jost', sans-serif;
+    color: #333F2B;
+  }
+  .rsvp-wrap h2 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 500;
+    font-size: 2.6rem;
+    text-align: center;
+    color: #4A5E3F;
+    margin: 0 0 12px;
+  }
+  .rsvp-wrap h3 {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: #4A5E3F;
+    margin: 0 0 8px;
+  }
+  .rsvp-intro {
+    text-align: center;
+    font-size: 1.05rem;
+    line-height: 1.7;
+    max-width: 620px;
+    margin: 0 auto 40px;
+  }
+  .rsvp-divider {
+    width: 60px;
+    height: 1px;
+    background: #B08D57;
+    margin: 0 auto 28px;
+    border: 0;
+  }
+  .rsvp-cards {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-bottom: 48px;
+  }
+  .rsvp-card {
+    background: #FAF6EE;
+    border: 1px solid rgba(176, 141, 87, 0.35);
+    border-radius: 6px;
+    padding: 24px 20px;
+    line-height: 1.6;
+    font-size: 0.97rem;
+  }
+  .rsvp-card .rsvp-date {
+    display: block;
+    font-size: 0.78rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: #B08D57;
+    margin-bottom: 6px;
+  }
+  .rsvp-card ul {
+    margin: 10px 0 0;
+    padding-left: 18px;
+  }
+  .rsvp-card li { margin-bottom: 4px; }
+  .rsvp-note {
+    font-size: 0.88rem;
+    font-style: italic;
+    margin-top: 10px;
+    opacity: 0.85;
+  }
+  .rsvp-cta { text-align: center; }
+  .rsvp-button {
+    display: inline-block;
+    background: #4A5E3F;
+    color: #FAF6EE;
+    font-family: 'Jost', sans-serif;
+    font-size: 1rem;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 16px 44px;
+    border-radius: 4px;
+    transition: background 0.2s ease;
+  }
+  .rsvp-button:hover,
+  .rsvp-button:focus { background: #333F2B; }
+  .rsvp-cta-note {
+    font-size: 0.88rem;
+    margin-top: 12px;
+    opacity: 0.8;
+  }
+  @media (max-width: 760px) {
+    .rsvp-cards { grid-template-columns: 1fr; }
+    .rsvp-wrap h2 { font-size: 2.1rem; }
+  }
+</style>
 
-<section class="section section--narrow">
-  <div class="container">
-    <p class="center">Let us know if you're joining us in Sorrento. It only takes a minute.</p>
+<section class="rsvp-wrap" id="rsvp">
+  <h2>RSVP</h2>
+  <hr class="rsvp-divider">
+  <p class="rsvp-intro">
+    We know a trip to Italy takes some planning, so this is an early, no-pressure RSVP.
+    Give us your best guess for now. You can always come back and update your answers.
+    It helps us plan our Capri day, hold hotel rooms and keep you in the loop.
+  </p>
 
-    <!--
-      RSVP FORM EMBED — replace this whole placeholder block once your Google Form is ready.
-
-      1. In Google Forms, click Send, then the "<>" embed icon, and copy the <iframe> code.
-      2. Paste it in place of the placeholder div below.
-      3. The iframe will inherit the width automatically; you can adjust the height attribute
-         on the iframe if the form gets cut off.
-    -->
-    <div class="form-embed-placeholder">
-      RSVP form coming soon.<br>
-      <span style="font-size:0.85rem;">(Google Form embed goes here once it's created.)</span>
+  <div class="rsvp-cards">
+    <div class="rsvp-card">
+      <span class="rsvp-date">Thursday, Oct 14, 2027</span>
+      <h3>The Wedding</h3>
+      At the Grand Hotel President, high in the hills above Sorrento with views of the
+      Bay of Naples.
     </div>
 
-    <div class="note-box" style="margin-top:32px;">
-      Please try to RSVP as soon as possible so we can plan the final headcount and so you can get early booking savings!Typically, the earlier you book hotels and flights, the better deal you'll get.
+    <div class="rsvp-card">
+      <span class="rsvp-date">Wednesday, Oct 13, 2027</span>
+      <h3>Capri Day</h3>
+      The day before the wedding, we're heading to the island of Capri, and your ferry
+      tickets are on us! We're still planning the day, so tell us what sounds fun:
+      the Monte Solaro chairlift, a hike, exploring on your own, or a little of everything.
+    </div>
+
+    <div class="rsvp-card">
+      <span class="rsvp-date">Oct 12 to Oct 16, 2027</span>
+      <h3>Stay at the Venue</h3>
+      We're holding a limited number of rooms at the Grand Hotel President:
+      <ul>
+        <li>€400 per night, per room (not per person)</li>
+        <li>Sea-view room with a balcony</li>
+        <li>A really lovely Italian breakfast every morning</li>
+        <li>4-night minimum: check in Tuesday, check out Saturday</li>
+      </ul>
+      <p class="rsvp-note">This is only to gauge interest, so you're not booking anything yet.
+      There are plenty of great options nearby too!</p>
     </div>
   </div>
+
+  <div class="rsvp-cta">
+    <a class="rsvp-button" href="https://docs.google.com/forms/d/e/1FAIpQLSeXq6kiiL98LzgTOJUPwTbdbNreIByWKFzUlx33O5KEFb1w6A/viewform" target="_blank" rel="noopener">RSVP Here</a>
+    <p class="rsvp-cta-note">Takes about 3 minutes. Opens in a new tab.</p>
+  </div>
 </section>
+<!-- ===== RSVP SECTION END ===== -->
 
 <footer class="site-footer">
   <div class="eyebrow">October 14, 2027</div>
